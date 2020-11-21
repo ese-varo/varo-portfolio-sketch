@@ -1,0 +1,17 @@
+{
+  "name": "varo-portfolio-sketch",
+  "version": "1.0.0",
+  "description": "Sketch of my professional portfolio",
+  "main": "main.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": "https://github.com/ese-varo/varo-portfolio-sketch",
+  "author": "Alvaro Padilla",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
