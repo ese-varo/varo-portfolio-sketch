@@ -1,0 +1,38 @@
+.container {
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: [header-start] 6rem [header-end nav-start] 6rem [main-start] 1fr [main-end] 6rem [nav-end];
+  grid-template-columns: [header-start nav-start] 6rem [main-start] 1fr [main-end] 6rem [header-end nav-end];
+}
+
+.header {
+  grid-column: header-start / header-end;
+  grid-row: header-start / header-end;
+
+  display: flex;
+}
+
+.side-nav {
+  grid-column: nav-start / nav-end;
+  grid-row: nav-start / nav-end;
+}
+
+.main {
+  grid-column: main-start / main-end;
+  grid-row: main-start / main-end;
+
+  display: flex;
+
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+.section-welcome {
+  
+}
+
+.home-hero {
+
+}
