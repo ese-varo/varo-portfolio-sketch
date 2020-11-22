@@ -1,29 +1,11 @@
-@font-face {
-    font-family: 'museomoderno';
-    src: url('museomoderno-variablefont_wght-webfont.woff2') format('woff2'),
-         url('museomoderno-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "abstracts/variables";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: 'museomoderno', 'MuseoModerno', sans-serif;
-}
-
-body {
-  // background-color: red;
-  font-size: 1.6rem;
-}
+@import "pages/home";

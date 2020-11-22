@@ -7,8 +7,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <p>This is my portfolio!</p>
+<body class="container">
+  <header class="header">
+    <img src="img/svg/logo-1-light.svg" class="logo-1" alt="logo">
+    <!-- <svg class="logo-1"> -->
+    <!--   <use xlink:href="img/svg/logo-1.svg"></use> -->
+    <!-- </svg> -->
+    <ul class="settings">
+      <li class="settings__lang settings__lang--active">EN.</li>
+      <li class="settings__lang">ES.</li>
+      <li class="settings__theme--light">
+        <img src="img/svg/theme-icon-light.svg" class="theme-icon" alt="theme icon">
+      </li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <section class="section-welcome">
+      <h1 class="welcome__heading">
+        hi there!
+      </h1>
+      <p class="welcome__message">
+        welcome to <span class="welcome__message-name">alvaro's</span> portfolio
+      </p>
+      <img src="img/svg/logo-3-dark.svg" class="logo-3" alt="logo 3">
+    </section>
+
+    <section class="home-hero">
+      <img src="img/svg/logo-2-dark.svg" class="home-hero__logo" alt="hero logo">
+      <img src="img/svg/logo-3-light.svg" class="home-hero__logo-shadow" alt="logo shadow">
+    </section>
+  </main>
+
+  <nav class="side-nav">
+    <li class="side-nav__item-1 side-nav__item--active">home</li>
+    <li class="side-nav__item-2">projects</li>
+    <li class="side-nav__item-3">contact</li>
+    <li class="side-nav__item-4">about</li>
+  </nav>
+
   <script src="main.js"></script>
 </body>
 </html>
