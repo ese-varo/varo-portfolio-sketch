@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'museomoderno';
+    src: url('fonts/museomoderno-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/museomoderno-variablefont_wght-webfont.woff') format('woff'),
+         url('fonts/museomoderno-variablefont_wght-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'museomoderno', 'MuseoModerno', sans-serif;
+  font-size: 1.6rem;
+}

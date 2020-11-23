@@ -22,17 +22,10 @@
   grid-column: main-start / main-end;
   grid-row: main-start / main-end;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 
   & > * {
-    flex-grow: 1;
   }
-}
-
-.section-welcome {
-  
-}
-
-.home-hero {
-
 }

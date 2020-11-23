@@ -1,0 +1,77 @@
+.container {
+  background-color: $color-primary;
+}
+
+.logo-1 {
+  width: 100px;
+  height: auto;
+}
+
+.section-welcome {
+  display: flex;
+  justify-content: center;
+  padding-right: 2%;
+  flex-direction: column;
+}
+
+.welcome,
+.side-nav,
+.header {
+  color: $color-primary-light;
+}
+
+.welcome {
+  transform: translateY(70%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  & > * {
+    display: block;
+  }
+
+  &__logo {
+    width: 10%;
+  }
+
+  &__heading {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: .9;
+    text-transform: uppercase;
+  }
+
+  &__message {
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+
+  &__message-name {
+    text-transform: lowercase;
+  }
+}
+
+.home-hero {
+  position: relative;
+  z-index: 1;
+
+  & > * {
+    width: 50%;
+    margin-left: 2%;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+
+  &__logo {
+    z-index: 3;
+    top: 50%;
+  }
+
+  &__logo-shadow {
+    z-index: 2;
+    top: 52%;
+    left: 2%;
+  }
+}
