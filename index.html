@@ -9,15 +9,17 @@
 </head>
 <body class="container">
   <header class="header">
-    <img src="img/svg/logo-1-light.svg" class="logo-1" alt="logo">
+    <a href="#">
+      <img src="img/svg/logo-1-light.svg" class="logo-1" alt="logo">
+    </a>
     <!-- <svg class="logo-1"> -->
     <!--   <use xlink:href="img/svg/logo-1.svg"></use> -->
     <!-- </svg> -->
     <ul class="settings">
-      <li class="settings__lang settings__lang--active">EN.</li>
-      <li class="settings__lang">ES.</li>
-      <li class="settings__theme--light">
-        <img src="img/svg/theme-icon-light.svg" class="theme-icon" alt="theme icon">
+      <li class="settings__item settings__lang settings__lang--active">EN.</li>
+      <li class="settings__item settings__lang">ES.</li>
+      <li class="settings__item settings__theme settings__theme--light">
+        <img src="img/svg/theme-icon-dark2.png" class="theme-icon" alt="theme icon">
       </li>
     </ul>
   </header>
@@ -43,10 +45,27 @@
   </main>
 
   <nav class="side-nav">
-    <li class="side-nav__item-1 side-nav__item--active">home</li>
-    <li class="side-nav__item-2">projects</li>
-    <li class="side-nav__item-3">contact</li>
-    <li class="side-nav__item-4">about</li>
+    <li class="side-nav__item side-nav__item--top">
+      <a class="side-nav__link" href="#">
+        <h3 class="side-nav__text side-nav__text--active">home</h3>
+      </a>
+    </li>
+    <li class="side-nav__item side-nav__item--right">
+      <a class="side-nav__link" href="#">
+        <h3 class="side-nav__text">contact</h3>
+      </a>
+    </li>
+    <li class="side-nav__item side-nav__item--bottom">
+      <a class="side-nav__link" href="#">
+        <h3 class="side-nav__text">projects</h3>
+      </a>
+    </li>
+    <li class="side-nav__item side-nav__item--left">
+      <a class="side-nav__link" href="#">
+        <h3 class="side-nav__text">about</h3>
+      </a>
+    </li>
+        
   </nav>
 
   <script src="main.js"></script>

@@ -44,31 +44,93 @@ body {
   grid-template-rows: 1fr; }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem; }
+
+.settings {
+  color: #087e80;
+  list-style: none;
   display: flex; }
+  .settings__item:not(:last-child) {
+    margin-right: 1rem; }
+  .settings__lang {
+    cursor: pointer; }
+    .settings__lang--active {
+      color: #6bfcff; }
+
+.theme-icon {
+  width: 1.6rem;
+  cursor: pointer; }
 
 .side-nav {
+  list-style: none;
   display: grid;
   grid-template-rows: 6rem 1fr 6rem;
   grid-template-columns: 6rem 1fr 6rem; }
-  .side-nav__item-1 {
-    grid-column: 2 / -1;
-    grid-row: 1 / 2; }
-  .side-nav__item-2 {
-    grid-column: -2 / -1;
-    grid-row: 2 / -1; }
-  .side-nav__item-3 {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4; }
-  .side-nav__item-4 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3; }
+  .side-nav__item {
+    display: flex;
+    position: relative; }
+    .side-nav__item--top {
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding-right: 6rem; }
+    .side-nav__item--right {
+      grid-column: -2 / -1;
+      grid-row: 2 / -1;
+      flex-direction: column-reverse;
+      align-items: flex-end; }
+      .side-nav__item--right h3 {
+        transform: rotate(90deg) translateX(-100%); }
+    .side-nav__item--bottom {
+      padding-left: 6rem;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      align-items: flex-start; }
+    .side-nav__item--left {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      flex-direction: column;
+      align-items: flex-end; }
+      .side-nav__item--left h3 {
+        transform-origin: bottom right;
+        transform: rotate(-90deg) translateX(-1.6rem); }
+  .side-nav__text {
+    position: relative;
+    z-index: 10; }
+  .side-nav__text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 3px;
+    background-color: #083f40;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+    z-index: -1; }
+  .side-nav__text:hover::before, .side-nav__text--active::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__text:active:before {
+    background-color: #087e80; }
+  .side-nav__link {
+    position: relative;
+    text-decoration: none;
+    color: #6bfcff;
+    text-transform: uppercase;
+    cursor: pointer; }
 
 .container {
   background-color: #0bb0b3; }
 
 .logo-1 {
-  width: 100px;
-  height: auto; }
+  cursor: pointer;
+  height: auto;
+  width: 100px; }
 
 .section-welcome {
   display: flex;

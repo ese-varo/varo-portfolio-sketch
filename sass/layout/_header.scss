@@ -1,3 +1,29 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.settings {
+  color: $color-primary-dark;
+  list-style: none;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__lang {
+    cursor: pointer;
+    
+    &--active {
+      color: $color-primary-light;
+    }
+  }
+}
+
+.theme-icon {
+  width: 1.6rem;
+  cursor: pointer;
 }
