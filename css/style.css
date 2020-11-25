@@ -18,7 +18,15 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #0bb0b3; }
+
+.container {
+  background-color: #0bb0b3;
+  margin: 0 auto; }
+  @media only screen and (min-width: 112.5em) {
+    .container {
+      max-width: 180rem; } }
 
 @font-face {
   font-family: 'museomoderno';
@@ -51,6 +59,18 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr; } }
+
+@media only screen and (max-width: 37.5em) {
+  .home-hero {
+    grid-row: 1 / 2; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-welcome {
+    grid-row: 2 / 3; } }
 
 .header {
   display: flex;
@@ -68,6 +88,10 @@ body {
     cursor: pointer; }
     .settings__lang--active {
       color: #6bfcff; }
+    .settings__lang:hover {
+      color: #6bfcff; }
+    .settings__lang:active {
+      color: #083f40; }
 
 .theme-icon {
   width: 1.6rem;
@@ -118,6 +142,7 @@ body {
     height: 50%;
     width: 3px;
     background-color: #083f40;
+    transform-origin: bottom;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
     z-index: -1; }
@@ -133,9 +158,6 @@ body {
     text-transform: uppercase;
     cursor: pointer; }
 
-.container {
-  background-color: #0bb0b3; }
-
 .logo-1 {
   cursor: pointer;
   height: auto;
@@ -147,6 +169,9 @@ body {
   padding-right: 2%;
   flex-direction: column;
   align-items: flex-end; }
+  @media only screen and (max-width: 37.5em) {
+    .section-welcome {
+      justify-content: flex-start; } }
 
 .welcome,
 .side-nav,
@@ -156,10 +181,16 @@ body {
 .welcome {
   width: min-content;
   position: relative;
-  transform: translateY(75%);
+  transform: translateY(100%);
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-template-columns: 1fr; }
+  @media only screen and (max-width: 75em) {
+    .welcome {
+      transform: translateY(75%); } }
+  @media only screen and (max-width: 37.5em) {
+    .welcome {
+      transform: translateY(20%); } }
   .welcome > * {
     display: block; }
   .welcome__heading {
@@ -169,10 +200,16 @@ body {
     text-transform: uppercase;
     grid-column: 1 / 2;
     grid-row: 1 / 2; }
+    @media only screen and (max-width: 56.25em) {
+      .welcome__heading {
+        font-size: 7rem; } }
   .welcome__message {
     text-transform: uppercase;
     grid-column: 1 / 2;
     grid-row: 2 / 3; }
+    @media only screen and (max-width: 56.25em) {
+      .welcome__message {
+        font-size: 1.4rem; } }
   .welcome__message-name {
     text-transform: lowercase; }
   .welcome__logo {
@@ -180,19 +217,38 @@ body {
     bottom: -5%;
     left: -15%;
     width: 30%; }
+    @media only screen and (max-width: 56.25em) {
+      .welcome__logo {
+        width: 25%; } }
 
 .home-hero {
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .home-hero {
+      display: flex;
+      justify-content: flex-end; } }
   .home-hero > * {
     width: 70%;
     margin-left: 2%;
     position: absolute;
     transform: translateY(-50%); }
+    @media only screen and (max-width: 75em) {
+      .home-hero > * {
+        width: 80%; } }
+    @media only screen and (max-width: 56.25em) {
+      .home-hero > * {
+        width: 90%; } }
+    @media only screen and (max-width: 37.5em) {
+      .home-hero > * {
+        width: 70%; } }
   .home-hero__logo {
     z-index: 3;
     top: 50%; }
   .home-hero__logo-shadow {
     z-index: 2;
-    top: 52%;
+    top: 53%;
     left: 2%; }
+    @media only screen and (max-width: 37.5em) {
+      .home-hero__logo-shadow {
+        left: 31%; } }

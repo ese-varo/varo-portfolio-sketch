@@ -24,4 +24,14 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $color-primary;
+}
+
+.container {
+  background-color: $color-primary;
+  margin: 0 auto;
+
+  @include respond(big-desktop) {
+    max-width: 180rem;
+  }
 }

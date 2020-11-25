@@ -20,6 +20,14 @@
     &--active {
       color: $color-primary-light;
     }
+
+    &:hover {
+      color: $color-primary-light;
+    }
+
+    &:active {
+      color: $color-secondary;
+    }
   }
 }
 
