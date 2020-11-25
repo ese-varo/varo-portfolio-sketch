@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -18,7 +27,7 @@ body {
   font-style: normal; }
 
 body {
-  font-family: 'museomoderno', 'MuseoModerno', sans-serif;
+  font-family: "museomoderno", "MuseoModerno", sans-serif;
   font-size: 1.6rem; }
 
 .container {
@@ -130,7 +139,7 @@ body {
 .logo-1 {
   cursor: pointer;
   height: auto;
-  width: 100px; }
+  width: 13rem; }
 
 .section-welcome {
   display: flex;
