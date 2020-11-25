@@ -63,7 +63,7 @@
     left: 0;
     height: 50%;
     width: 3px;
-    background-color: $color-secondary;
+    background-color: $color-primary-dark;
     transform-origin: bottom;
     transform: scaleY(0);
     transition: transform .2s,
@@ -79,7 +79,7 @@
   }
 
   &__text:active:before {
-    background-color: $color-primary-dark;
+    background-color: $color-secondary-dark;
   }
 
   &__link {

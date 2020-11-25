@@ -21,8 +21,13 @@ body {
   box-sizing: border-box;
   background-color: #0bb0b3; }
 
+.light-theme {
+  background-color: #0bb0b3; }
+
+.dark-theme {
+  background-color: #083f40; }
+
 .container {
-  background-color: #0bb0b3;
   margin: 0 auto; }
   @media only screen and (min-width: 112.5em) {
     .container {
@@ -91,7 +96,7 @@ body {
     .settings__lang:hover {
       color: #6bfcff; }
     .settings__lang:active {
-      color: #083f40; }
+      color: #087e80; }
 
 .theme-icon {
   width: 1.6rem;
@@ -141,7 +146,7 @@ body {
     left: 0;
     height: 50%;
     width: 3px;
-    background-color: #083f40;
+    background-color: #087e80;
     transform-origin: bottom;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
@@ -150,7 +155,7 @@ body {
     transform: scaleY(1);
     width: 100%; }
   .side-nav__text:active:before {
-    background-color: #087e80; }
+    background-color: #063233; }
   .side-nav__link {
     position: relative;
     text-decoration: none;
